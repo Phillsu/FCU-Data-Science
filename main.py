@@ -8,8 +8,8 @@ plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
 plt.rcParams['font.serif'] = ['Arial Unicode MS']
 
 #讀入檔案
-path1 = "/Users/mac/Documents/DataScience/midproject/10912.json"
-path2 = "/Users/mac/Documents/DataScience/midproject/交通事故代號.csv"
+path1 = "10912.json"
+path2 = "交通事故代號.csv"
 with open(path1, 'r', encoding='utf-8') as file:
     tmp = pd.DataFrame(json.load(file))
 df = tmp[['時', '區', '死', '受傷','GPS緯度','GPS經度', '飲酒情形', '主要肇因', '事故位置']]
